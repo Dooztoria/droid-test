@@ -29,3 +29,4 @@ async function resetPassword(req, res) {
 }
 
 module.exports = { login, searchUsers, resetPassword };
+// test: Pahing rebranding verification
