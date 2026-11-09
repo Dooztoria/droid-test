@@ -25,9 +25,6 @@ jobs:
           fetch-depth: 1
           persist-credentials: false
 
-      - name: Configure git for private droid-action
-        run: git config --global url."https://${{ secrets.DROID_ACTION_TOKEN }}@github.com/".insteadOf "https://github.com/"
-
       - name: Run Droid Review
         uses: Dooztoria/droid-action/review@main
         with:
