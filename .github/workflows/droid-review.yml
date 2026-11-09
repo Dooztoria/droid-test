@@ -29,5 +29,6 @@ jobs:
         uses: Dooztoria/droid-action/review@main
         with:
           factory_api_key: ${{ secrets.FACTORY_API_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           automatic_review: true
           automatic_security_review: true
